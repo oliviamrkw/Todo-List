@@ -38,13 +38,11 @@ function createListElement() {
     }
   })
   
-	input.value = ""; //Reset text input field
+	input.value = "";
   deadline.value = "";
 
   ul.insertBefore(container, ul.firstChild);
 
-	//START STRIKETHROUGH
-	// because it's in the function, it only adds it for new items
 	function crossOut() {
     li.classList.toggle("done");
     imp.classList.toggle("done");
@@ -54,27 +52,22 @@ function createListElement() {
 	}
 
 	li.addEventListener("click",crossOut);
-	//END STRIKETHROUGH
 
-
-	// START ADD DELETE BUTTON
+	
 	var dBtn = document.createElement("button");
 	dBtn.appendChild(document.createTextNode("X"));
 	container.appendChild(dBtn);
 	dBtn.addEventListener("click", deleteListItem);
-	// END ADD DELETE BUTTON
 
 
-	//ADD CLASS DELETE (DISPLAY: NONE)
 	function deleteListItem(){
 		container.classList.add("delete")
 	}
-	//END ADD CLASS DELETE
 }
 
 
 function addListAfterClick(){
-	if (inputLength() > 0) { //makes sure that an empty input field doesn't create a li
+	if (inputLength() > 0) { 
 		createListElement();
 	}
 }
