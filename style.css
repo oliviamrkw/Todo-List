@@ -1,0 +1,136 @@
+body {
+	background: #94A684;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+
+h1 {
+	color: #000000;
+	font-weight: 800;
+}
+
+p {
+	font-weight: 600;
+}
+
+#first {
+	margin-top: 10px;
+	color: #3b4532;
+  margin-bottom: 30px;
+}
+
+#enter {
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #000000;
+	background-color: #3b4532;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	opacity: 0.7;
+}
+
+important {
+	border: 2px solid #7b8c6c;
+  padding: 5px 10px;
+	border-radius: 3px;
+	color: #3b4532;
+	background-color: #E4E4D0;
+  margin-right: 10px;
+}
+
+.important {
+  background-color: #e0bf00;
+}
+
+important:hover{
+	opacity: 0.7;
+  background-color: #e3dd9f;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+  padding: 0;
+}
+
+container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 60%;
+  margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+li {
+	padding: 10px 20px;
+  max-width: 100%;
+	color: #3b4532;
+	font-weight: 600;
+	border: 2px solid #7b8c6c;
+	border-radius: 5px;
+  flex: auto;
+
+	background: #E4E4D0;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	opacity: 0.7;
+  color: #1e211c;
+  background-color: #e3dd9f;
+  border: 2px solid #535e49;
+}
+
+li > button, #important {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #3b4532;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 50%;
+	padding: 5px;
+	border: none;
+}
+
+#itemName {
+  min-width: 50%
+}
+
+#deadline {
+  min-width: 20%
+}
+
+.done {
+	background: #51DF70;
+	color: #3b4532;
+  text-decoration: line-through;
+}
+
+.delete {
+	display: none;
+}
